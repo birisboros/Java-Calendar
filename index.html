@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Test</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <script>
+        let name = 'Max';
+        let admin;
+        admin = name;
+        alert(name);
+        console.log(admin);
+        console.log((4 + 6 + 9) / 77);
+        let x = 10;
+        let y = 20;
+        let z = "The result is: " + (x + y);
+        console.log(z);
+        
+
+    </script>
+    <style>
+        body {
+            font-family: 'Monoton', cursive;
+            background: burlywood;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            z-index: auto;
+            width: 100vw;
+            height: 100%;
+        }
+        p{
+            position: relative;
+            font-family: 'Courier New', Courier, monospace;
+        
+         font-weight: bold;
+         z-index: 9;   
+        }
+        h2 {
+           
+            font-size: 3em;
+            font-weight: 400;
+            color: brown;
+        }
+        p {
+           margin-top: -0.2em;
+            font-size: 3em;
+            color: brown;
+            
+        }
+        div{
+            display: grid;
+         justify-items: center;
+         
+        }
+        section{
+            display: flex;
+            gap: 1em;
+            margin-bottom: -10em;
+            z-index: -4;
+         
+        }
+        .hexagon {
+            
+            position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+  background-image: url(https://image.freepik.com/vetores-gratis/fundo-de-galaxia-realista-com-estrelas_23-2148965898.jpg);
+  margin: 86.60px 0;
+  border-left: solid 5px #333333;
+  border-right: solid 5px #333333;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before,
+.hexagon:after {
+    z-index: -1;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 33.9340px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before {
+  top: -106.0660px;
+  border-top: solid 14.1421px #333333;
+  border-right: solid 14.1421px #333333;
+}
+
+.hexagon:after {
+  bottom: -106.0660px;
+  border-bottom: solid 14.1421px #333333;
+  border-left: solid 14.1421px #333333;
+}
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript Calendar</h2>
+
+<p id="demo"></p>
+<section>
+<div class="hexagon">
+    <p>SUNDAY</p>
+    <p id="semana0"></p>
+</div>
+<div class="hexagon">
+    <p>MONDAY</p>
+    <p id="semana1"></p>
+</div>
+<div class="hexagon">
+    <p>TUESDAY</p>
+    <p id="semana2"></p>
+</div>
+<div class="hexagon">
+    <p>WEDNESDAY</p>
+    <p id="semana3"></p>
+</div>
+</section>
+<section>
+    <div class="hexagon">
+        <p>THURSDAY</p>
+        <p id="semana4"></p>
+    </div>
+    <div class="hexagon">
+        <p>FRIDAY</p>
+        <p id="semana5"></p>
+    </div>
+    <div class="hexagon">
+        <p>SATURDAY</p>
+        <p id="semana6"></p>
+    </div>
+    </section>
+    
+<script>
+let text;
+switch (new Date().getDay()) {
+    case 5: 
+    text ="friday night rocks!!!";
+    break;
+    case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+let texto0;
+switch (new Date().getDay()) {
+    case 0: 
+    texto0 ="X";
+    break;
+    default:
+    texto0 = "";
+}
+document.getElementById("semana0").innerHTML = texto0;
+let texto1;
+switch (new Date().getDay()) {
+    case 1: 
+    texto1 ="X";
+    break;
+    default:
+    texto1 = "";
+}
+document.getElementById("semana1").innerHTML = texto1;
+let texto2;
+switch (new Date().getDay()) {
+    case 2: 
+    texto2 ="X";
+    break;
+    default:
+    texto2 = "";
+}
+document.getElementById("semana2").innerHTML = texto2;
+let texto3;
+switch (new Date().getDay()) {
+    case 3: 
+    texto3 ="X";
+    break;
+    default:
+    texto3 = "";
+}
+document.getElementById("semana3").innerHTML = texto3;
+
+let texto4;
+switch (new Date().getDay()) {
+    case 4: 
+    texto4 ="X";
+    break;
+    default:
+    texto4 = "";
+}
+document.getElementById("semana4").innerHTML = texto4;
+let texto5;
+switch (new Date().getDay()) {
+    case 5: 
+    texto5 ="X";
+    break;
+    default:
+    texto5 = "";
+}
+document.getElementById("semana5").innerHTML = texto5;
+let texto6;
+switch (new Date().getDay()) {
+    case 6: 
+    texto6 ="X";
+    break;
+    default:
+    texto6 = "";
+}
+document.getElementById("semana6").innerHTML = texto6;
+</script>
+</body>
+</html>
